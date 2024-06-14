@@ -21,7 +21,7 @@ res_image=client.get(url=image_url,cookies=cookies,headers=headers)
 image_data=BytesIO(res_image.content)
 image=Image.open(image_data)
 image.show()
-anwser=input()
+anwser=input() #input your captcha
 post_url='https://aa.bjtu.edu.cn/course_selection/courseselecttask/selects_action/?action=submit'
 headers_post={
     'Referer':'https://aa.bjtu.edu.cn/course_selection/courseselecttask/selects_action/?action=load&iframe=school',
